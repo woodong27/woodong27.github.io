@@ -10,6 +10,4 @@ tags:
     ]
 ---
 
-# Initial Posting
-
 블로그 개설 완료
