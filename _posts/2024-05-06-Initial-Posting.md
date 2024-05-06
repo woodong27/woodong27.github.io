@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Initial Posting"
-date: YYYY-MM-DD HH:MM:SS +09:00
-categories: etc
+date: 2024-05-06 22:03 +09:00
+categories: IT etc
 tags:
     [
         github,
