@@ -4,3 +4,31 @@
 @import 'main';
 
 /* append your custom style below */
+.notice {
+  @include notice($light-gray);
+}
+
+/* Primary notice */
+.notice--primary {
+  @include notice($primary-color);
+}
+
+/* Info notice */
+.notice--info {
+  @include notice($info-color);
+}
+
+/* Warning notice */
+.notice--warning {
+  @include notice($warning-color);
+}
+
+/* Success notice */
+.notice--success {
+  @include notice($success-color);
+}
+
+/* Danger notice */
+.notice--danger {
+  @include notice($danger-color);
+}
