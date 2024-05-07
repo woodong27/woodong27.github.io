@@ -41,15 +41,14 @@ private으로 생성된 레포지토리는 GitHub Actions로 배포시 매월 �
 
 ## 2. Ruby 설치
 
-GitHub 블로그를 만들기 위해서는 앞서 얘기한 것과 같이 정적 사이트를 생성하기 위해 `Jekyll`을 설치해야한다.
-`Jekyll`을 설치하기 위해서는 사전에 `Ruby`를 설치해야 한다.
+GitHub 블로그를 만들기 위해서는 앞서 얘기한 것과 같이 정적 사이트를 생성하기 위해 `Jekyll`을 설치해야한다.   
+`Jekyll`을 설치하기 위해서는 사전에 `Ruby`를 설치해야 한다.   
 
-`Ruby` 이후 이어질 `Jekyll`과 `bundler`는 모두 WSL에서 설치된다.
+`Ruby` 이후 이어질 `Jekyll`과 `bundler`는 모두 WSL에서 설치된다.   
 WSL의 설치 및 실행은 [[WSL] Windows에서 Linux 개발 환경 설정](https://woodong27.github.io/posts/WSL/) 포스팅을 참고하면 된다.   
 
-Git bash, CMD, Powershell 등 아무 터미널을 키고 아래의 명령어를 순서대로 입력한다.  
-Ubuntu-22.04 버전을 기준으로 진행한다.    
-터미널은 Windows에서 실행한다.
+Git bash, CMD, Powershell 등 아무 터미널을 키고 아래의 명령어를 순서대로 입력한다.   
+Ubuntu-22.04 버전을 기준으로 진행하며, 터미널은 Windows에서 실행하면 된다.   
 
 ```bash
 # wsl 진입 명령
@@ -66,11 +65,11 @@ sudo apt install ruby-full
 ruby -v
 ```
 
-`-v`명령을 입력했을 때 설치된 ruby의 버전 정보가 출력된다면 완료되었다.
+`-v`명령을 입력했을 때 설치된 ruby의 버전 정보가 출력된다면 완료되었다.   
 
 ## 3. Jekyll & bundler 설치
 
-`Ruby`의 설치가 완료되었으면 `jekyll`과 실행을 위한 `bundler`를 설치한다.
+`Ruby`의 설치가 완료되었으면 `jekyll`과 실행을 위한 `bundler`를 설치한다.   
 
 ```bash
 # jekyll 설치
@@ -102,7 +101,7 @@ sudo gem install bundler
 bundler -v
 ```
 
-`-v` 명령을 입력했을 때 정상적으로 버전 정보가 출력되면 완료되었다.
+`-v` 명령을 입력했을 때 정상적으로 버전 정보가 출력되면 완료되었다.   
 
 ## 4. 정리
 
