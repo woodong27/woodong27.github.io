@@ -30,9 +30,10 @@ GitHub 블로그를 만들겠다고 마음먹었다는 것은 기본적으로 Gi
 <img alt="Create new repository" src="/assets/posts/tech/github_blog/github_blog_1/make_repository.jpg" style="align-text: left;" width="100%" height="100%">
 
 `{my_github_username}.github.io`의 이름을 가진 레포지토리를 생성한다.   
-레포지토리는 public으로 생성하였다.   
+레포지토리는 public으로 생성하였다.
+
 private으로 생성된 레포지토리는 GitHub Actions로 배포시 매월 제공되는 무료 사용량을 초과하면 요금이 부과된다.
-{: .notice}
+{: .notice--info}
 
 <img src="/assets/posts/tech/github_blog/github_blog_1/github_settings.jpg" alt="GitHub Settings" style="text-align: left;" width="100%" height ="100%">
 

@@ -4,31 +4,77 @@
 @import 'main';
 
 /* append your custom style below */
+
+/* Default notice */
 .notice {
-  @include notice($light-gray);
+  margin: 2em 0 !important;
+  padding: 1em;
+  color: #353434;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-size: 0.75em !important;
+  text-indent: initial;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(172, 171, 171, 0.25);
 }
 
-/* Primary notice */
-.notice--primary {
-  @include notice($primary-color);
-}
-
-/* Info notice */
+/* Information notice */
 .notice--info {
-  @include notice($info-color);
+  margin: 2em 0 !important;
+  padding: 1em;
+  color: #3d4144;
+  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
+    'Nanum Gothic', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande',
+    Arial, sans-serif;
+  font-size: 0.75em !important;
+  text-indent: initial;
+  background-color: #ebf5f8;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(59, 156, 186, 0.25);
 }
 
 /* Warning notice */
 .notice--warning {
-  @include notice($warning-color);
+  margin: 2em 0 !important;
+  padding: 1em;
+  color: #3d4144;
+  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
+    'Nanum Gothic', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande',
+    Arial, sans-serif;
+  font-size: 0.75em !important;
+  text-indent: initial;
+  background-color: #fbf2e6;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(214, 127, 5, 0.25);
 }
 
 /* Success notice */
 .notice--success {
-  @include notice($success-color);
+  margin: 2em 0 !important;
+  padding: 1em;
+  color: #3d4144;
+  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
+    'Nanum Gothic', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande',
+    Arial, sans-serif;
+  font-size: 0.75em !important;
+  text-indent: initial;
+  background-color: #ecf6ec;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(63, 166, 63, 0.25);
 }
 
 /* Danger notice */
 .notice--danger {
-  @include notice($danger-color);
+  margin: 2em 0 !important;
+  padding: 1em;
+  color: #3d4144;
+  font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
+    'Nanum Gothic', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande',
+    Arial, sans-serif;
+  font-size: 0.75em !important;
+  text-indent: initial;
+  background-color: #fdefef;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(238, 95, 91, 0.25);
 }
