@@ -2,7 +2,7 @@
 layout: post
 title: "Initial Posting"
 date: 2024-05-06 22:03 +09:00
-categories: Blog ETC
+categories: blog ETC
 tags:
     [
         github,
