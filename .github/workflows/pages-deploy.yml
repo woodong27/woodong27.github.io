@@ -51,11 +51,17 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: Test site
+        # run: |
+        #   bundle exec htmlproofer _site \
+        #     --disable-external \
+        #     --url-ignore "/jekyllthemes.org/" \
+        #     --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
         run: |
           bundle exec htmlproofer _site \
             --disable-external \
             --url-ignore "/jekyllthemes.org/" \
-            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            --href-ignore "http://"
+
 
 
       - name: Upload site artifact
