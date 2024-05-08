@@ -59,8 +59,8 @@ jobs:
         run: |
           bundle exec htmlproofer _site \
             --disable-external \
-            --url-ignore "/jekyllthemes.org/" \
-            --href-ignore "http://"
+            --url-ignore "http://jekyllthemes.org/" \
+            --ignore-urls "http://"
 
 
 
