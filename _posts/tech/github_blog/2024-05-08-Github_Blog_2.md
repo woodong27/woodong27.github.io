@@ -48,7 +48,7 @@ wsl sudo bundle install
 
 # 로컬 서버로 jekyll 실행
 # 뒤에 --livereload 옵션을 붙이면 변경사항이 발생할 시 자동으로 새로고침 된다.
-wsl bundler exec jekyll serve
+wsl bundle exec jekyll serve
 ```
 
 로컬 서버에서 `jekyll` 서버를 실행하면 4000포트에서 사이트를 확인할 수 있다.
