@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub Blog] GitHub 블로그 만들기 1"
+title: "[Github Blog] GitHub 블로그 만들기 1"
 date: 2024-05-07 22:09 +09:00
 categories: tech github_blog
 tags:
@@ -13,17 +13,17 @@ tags:
     ]
 ---
 
->GitHub 블로그를 만들기 위한 과정을 정리한다.
+>Github 블로그를 만들기 위한 과정을 정리한다.
 
 개발을 하며 겪는 이슈를 해결하거나 관련 지식을 공부하다보면 다양한 개발 블로그를 만나게 된다.   
-`velog`, `tistory` 이외에도 `GitHub`을 활용하는 블로그에 흥미를 가지게 되어 선택하였다.
+`velog`, `tistory` 이외에도 `Github`을 활용하는 블로그에 흥미를 가지게 되어 선택하였다.
 
-GitHub 블로그는 `Jekyll`이라는 정적 사이트 생성기와 GitHub Actions를 통해 블로그를 만들고 글을 게시한다.   
+Github 블로그는 `Jekyll`이라는 정적 사이트 생성기와 Github Actions를 통해 블로그를 만들고 글을 게시한다.   
 마크다운으로 포스트를 작성할 수 있어 사용이 간편하고, 현재 사용 중인 `Chirpy` 테마처럼 다양한 테마를 선택해서 적용할 수 있어 선택하였다.
 
-## 1. GitHub 설정
+## 1. Github 설정
 
-GitHub 블로그를 만들겠다고 마음먹었다는 것은 기본적으로 GitHub에 대한 이해가 있다고 생각하기 때문에, 관련 절차는 간략하게 정리하고 넘어간다. 
+Github 블로그를 만들겠다고 마음먹었다는 것은 기본적으로 Github에 대한 이해가 있다고 생각하기 때문에, 관련 절차는 간략하게 정리하고 넘어간다. 
 
 ### 1.1 Repository 만들기
 
@@ -32,16 +32,16 @@ GitHub 블로그를 만들겠다고 마음먹었다는 것은 기본적으로 Gi
 `{my_github_username}.github.io`의 이름을 가진 레포지토리를 생성한다.   
 레포지토리는 public으로 생성하였다.
 
-private으로 생성된 레포지토리는 GitHub Actions로 배포시 매월 제공되는 무료 사용량을 초과하면 요금이 부과된다.
+private으로 생성된 레포지토리는 Github Actions로 배포시 매월 제공되는 무료 사용량을 초과하면 요금이 부과된다.
 {: .notice--info}
 
-<img src="/assets/posts/tech/github_blog/github_blog_1/github_settings.jpg" alt="GitHub Settings" style="text-align: left;" width="100%" height ="100%">
+<img src="/assets/posts/tech/github_blog/github_blog_1/github_settings.jpg" alt="Github Settings" style="text-align: left;" width="100%" height ="100%">
 
-`Settings` - `Pages` - `Build and deployment`에서 Source를 `GitHub Actions`로 변경한다.
+`Settings` - `Pages` - `Build and deployment`에서 Source를 `Github Actions`로 변경한다.
 
 ## 2. Ruby 설치
 
-GitHub 블로그를 만들기 위해서는 앞서 얘기한 것과 같이 정적 사이트를 생성하기 위해 `Jekyll`을 설치해야한다.   
+Github 블로그를 만들기 위해서는 앞서 얘기한 것과 같이 정적 사이트를 생성하기 위해 `Jekyll`을 설치해야한다.   
 `Jekyll`을 설치하기 위해서는 사전에 `Ruby`를 설치해야 한다.   
 
 `Ruby` 이후 이어질 `Jekyll`과 `bundler`는 모두 WSL에서 설치된다.   
@@ -105,6 +105,6 @@ bundler -v
 
 ## 4. 정리
 
-GitHub 블로그 시작에 앞서 개설을 위한 사전 준비를 완료하였다.   
+Github 블로그 시작에 앞서 개설을 위한 사전 준비를 완료하였다.   
 다음 포스팅에서는 생성한 레포지토리에 원하는 테마의 블로그를 작성하고 실행하는 방법을 정리할 예정이다.
 

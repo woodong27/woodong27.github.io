@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub Blog] GitHub 블로그 만들기 2"
+title: "[Github Blog] Github 블로그 만들기 2"
 date: 2024-05-08 17:25 +09:00
 categories: tech github_blog
 tags:
@@ -13,10 +13,10 @@ tags:
     ]
 ---
 
->원하는 jekyll 테마를 적용하고, GitHub Actions를 통해 블로그를 배포한다.
+>원하는 jekyll 테마를 적용하고, Github Actions를 통해 블로그를 배포한다.
 
-앞선 포스팅에서 GitHub에서 레포지토리를 생성하고 `Ruby`, `jekyll`, `bundler`를 설치하였다.   
-이어서 `jekyll`로 블로그를 생성하고 원하는 테마를 적용하고 GitHub Actions를 통해 배포하는 과정을 정리한다.
+앞선 포스팅에서 Github에서 레포지토리를 생성하고 `Ruby`, `jekyll`, `bundler`를 설치하였다.   
+이어서 `jekyll`로 블로그를 생성하고 원하는 테마를 적용하고 Github Actions를 통해 배포하는 과정을 정리한다.
 
 블로그 생성에 앞서, 이전에 만든 레포지토리를 로컬에 클론하고 해당 디렉토리에서 VSCode를 실행한다.
 
@@ -76,7 +76,7 @@ wsl bundler exec jekyll serve
 
 사이트에서 원하는 테마를 찾았다면 다운로드 버튼을 눌러 zip파일을 다운 받는다.   
 다운로드 받은 파일의 압축을 풀고 폴더안의 모든 내용을 복사한다.   
-복사한 것을 GitHub에서 클론 받은 루트 디렉토리에 붙여넣는다.   
+복사한 것을 Github에서 클론 받은 루트 디렉토리에 붙여넣는다.   
 
 이후, 블로그 초기화를 위해 아래의 파일들을 삭제한다.   
 아래 목록 중 존재하지 않는 파일이 있다면 해당 파일은 넘어간다.
@@ -89,7 +89,7 @@ wsl bundler exec jekyll serve
 `_posts` 디렉토리에는 블로그에 게시할 포스트들이 저장되며, 처음에는 chirpy 개발자가 커스텀한 임시 포스트들이 저장되어 있다.
 {: .notice--info}
 
-파일/디렉토리 삭제 후에는 GitHub Actions 설정을 위해 `.github/` 디렉토리 내부의 파일을 삭제하고 수정한다.
+파일/디렉토리 삭제 후에는 Github Actions 설정을 위해 `.github/` 디렉토리 내부의 파일을 삭제하고 수정한다.
 <img class="post-image" src="/assets/posts/tech/github_blog/github_blog_2/workflow_setting.png" alt=".github 설정">
 chirpy 테마를 기준으로 `.github/workflows/starter/pages-deploy.yml` 파일을 제외하고 모두 삭제한다.   
 
@@ -107,10 +107,11 @@ wsl bundle install
 `Jekyll` 테마 적용 후에는 나에게 맞게 블로그의 설정을 변경한다.   
 설정은 루트 디렉토리의 `_config.yml` 파일의 수정을 통해 변경할 수 있다.
 
-아래에 적힌 항목들을 찾아서 수정한다.
+아래에 적힌 항목들을 찾아서 수정한다.   
+`_data/locales/` 에서 사용가능한 언어 목록을 확인할 수 있다.
 
 ```yaml
-lang: ko  # 기본언어 설정 - 한글
+lang: en  # 언어 설정
 
 timezone: Asia/Seoul  # 시간대 설정
 
@@ -120,10 +121,10 @@ tagline: 블로그 서브 타이틀
 
 description: 블로그 소개
 
-url: "https://{GitHub username}.github.io"
+url: "https://{github username}.github.io"
 
 github:
-  username: GitHub username
+  username: github username
 
 social:
   name: 이름
@@ -153,12 +154,12 @@ wsl bundle exec jekyll serve
 
 ## 4. 블로그 배포
 
-설정 완료 후 로컬에서 확인까지 끝났다면 GitHub Actions를 통해 빌드/배포를 진행한다.   
+설정 완료 후 로컬에서 확인까지 끝났다면 Github Actions를 통해 빌드/배포를 진행한다.   
 현재 레포지토리의 변경사항을 모두 push하면 자동으로 실행되며, Github의 Action에서 진행상황을 확인할 수 있다.
-<img class="post-image" src="/assets/posts/tech/github_blog/github_blog_2/github_actions.png" alt="GitHub Actions">
+<img class="post-image" src="/assets/posts/tech/github_blog/github_blog_2/github_actions.png" alt="Github Actions">
 빌드/배포에서 Fail이 발생하면 해당 항목을 클릭해서 디버깅할 수 있다.
 
 ## 5. 정리
 
-GitHub 블로그에 원하는 테마를 적용하고 GitHub Actions를 통해 배포하였다.   
+Github 블로그에 원하는 테마를 적용하고 Github Actions를 통해 배포하였다.   
 이어지는 글에서는 포스트 작성, 댓글 설정, 검색 엔진 등록 등 블로그를 활용하는 방법들을 정리할 예정이다.
