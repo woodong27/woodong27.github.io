@@ -155,7 +155,7 @@ wsl bundle exec jekyll serve
 ## 4. 블로그 배포
 
 설정 완료 후 로컬에서 확인까지 끝났다면 Github Actions를 통해 빌드/배포를 진행한다.   
-현재 레포지토리의 변경사항을 모두 push하면 자동으로 실행되며, Github의 Action에서 진행상황을 확인할 수 있다.
+현재 레포지토리의 변경사항을 모두 push하면 자동으로 실행되며, Actions에서 진행상황을 확인할 수 있다.
 <img class="post-image" src="/assets/posts/tech/github_blog/github_blog_2/github_actions.png" alt="Github Actions">
 빌드/배포에서 Fail이 발생하면 해당 항목을 클릭해서 디버깅할 수 있다.
 
