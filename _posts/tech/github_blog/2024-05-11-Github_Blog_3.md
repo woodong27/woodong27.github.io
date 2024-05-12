@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub Blog] GitHub 블로그 만들기 3"
+title: "[GitHub Blog] Github 블로그 만들기 3"
 date: 2024-05-11 23:55 +09:00
 categories: tech github_blog
 tags:
